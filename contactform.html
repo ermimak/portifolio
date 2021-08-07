@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <img src="pics/html.ico" alt="drop down">
+            <div class="drops">
+                <a href="index.html">Home</a>
+                <a href="#about">About me</a>
+                <a href="#skill">Skill</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <ul class="items">
+            <li class="item" id="home"><a href="index.html">Home</a></li>
+            <li class="item" id="about-me"><a href="#about">About me</a></li>
+            <li class="item" id="skill"><a href="#skill">Skill</a></li>
+            <li class="item" id="contact"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    <div class="contactform">
+        <div class="error"></div>
+        <form action="" method="GET" id="form">
+            <div class="container">
+                <label for="fname"><span>First name:</span></label>
+                <input type="text" id="fname" name="fname" class="form" required><br><br>
+            </div>
+            <div class="container">
+                <label for="lname"><span>Last Name:</span></label>
+                <input type="text" id="lname" name="lname" class="form" required><br><br>
+            </div>
+            <div class="container">
+                <label for="email"><span>Email:</span></label>
+                <input type="email" id="email" name="email" placeholder="tola@gmail.com" class="form" required><br>
+            </div>
+            <div class="container">
+                <label for="message"><Span>Message</Span></label><br>
+                <input type="text" id="message" name="message" placeholder="text..." class="form" required><br><br> 
+            </div>
+         </div>
+            <input type="submit" value="submit" class="btn">
+          </form>
+
+
+    <div class="contact" id="contact">
+        <div class="line"></div>
+        <h3><a href="contactform.html">Contact</a></h3>
+        <div class="ico"><a href="https://github.com/ermimak"><img src="pics/github.ico" alt=""></a></div>
+        <div class="ico"><a href=""><img src="pics/fb.ico" alt=""></a></div>
+        <div class="ico"><a href=""><img src="pics/tg.ico" alt=""></a></div>
+        <div class="ico"><a href=""><img src="pics/gmail.ico" alt=""></a></div>
+        <div class="ico"><a href=""><img src="pics/insta.ico" alt=""></a></div>
+        <div class="ico"><a href=""><img src="pics/twitter.ico" alt=""></a></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Illum reprehenderit dolores aspernatur accusantium quisquam placeat sequi odit quod perferendis, iste consequatur iusto quis est,
+             neque distinctio numquam consectetur corrupti pariatur.</p>
+    </div>
+</body>
+</html>

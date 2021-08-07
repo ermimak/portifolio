@@ -1,0 +1,391 @@
+/*--------------------Main Div Styling--------------*/
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.head{
+    height:700px;
+    width:100%;
+    background-image: linear-gradient(
+        rgba(4,9,30,0.7),rgba(4,9,30,0.9)),url(pics/back.jpg);
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+.about{
+    height: 800px;
+    width: 100%;
+    justify-content:space-between;
+    background-position:center;
+    background-size:cover;
+    position: relative;
+}
+.skill{
+    height: 600px;
+    width:100%;
+    justify-content:center;
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    flex-direction: row;
+    flex-flow: row;
+    margin-top:20px;
+}
+
+.contact{
+    float:left;
+    position: relative;
+    text-align: center;
+    background:rgb(26, 34, 58);
+    clip-path: polygon(0 0,100% 0, 100% calc(100%-10vw), 0 100%);
+}
+/*--------------------------------------------*/
+/*--------------------Navbar------------------*/
+.navbar{
+    height: 50px;
+    background:rgb(26, 34, 58);
+    align-items: center;
+    position:static;
+}
+.navbar img{
+    height: 50px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown span{
+    margin-top: 20px;
+}
+.drops{
+    display:none;
+    position:absolute;
+    min-width: 100px;
+    min-height: 250%;
+    background:black;
+    box-shadow: 0px 16px 20px 10px rgba(17, 17, 17, 0.2);
+    z-index: 1;
+}
+.drops a{
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom:10px ;
+    display: block;
+}
+.dropdown:hover img{
+    height: 64px;
+}
+.dropdown:hover .drops{
+    display:block;
+}
+span{
+    color:white;
+    font-size: larger;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+.items{
+    float: right;
+    margin:15px 0px 2px 10px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    size: 20px;
+}
+a:hover{
+    color:blue;
+    transition:all 0.5s;
+    font-size: x-large;
+}
+.item{
+    display: inline;
+    list-style: none;
+    padding:10px;
+    size: 10px;
+    position:relative;
+}
+
+/*--------------------------------*/
+/*--------------------Home---------------*/
+.profile-pic{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    margin: 0px 0px 5px 0px;
+}
+
+.profile-pic .me img{
+    margin-top:8%;
+    position: relative;
+    width: 350px;
+    clip-path: circle();
+}
+
+.profile-pic .astu img{
+    margin:0px 0px;
+    position: relative;
+    width: 100px;
+    clip-path: circle();
+}
+.me img{
+    border: 3px solid;
+}
+.astu img{
+    top:20px;
+    right:120px;
+    border:3px solid;
+}
+
+h1{
+    position: relative;
+    color: white;
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+h1 span{
+    color: blue;
+}
+/*------------------------*/
+h2{
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+}
+#headline{
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.headline h2{
+    margin: 2% 2%;
+    font-size: 32px;
+    
+}
+/*-------------About me-----------*/
+.box2{
+    margin:30px 10px;
+    flex-basis:30%;
+    background:rgb(64, 75, 110);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing:border-box;
+    padding:20px 12px;
+    position: absolute;
+    text-align:center;
+    align-content: flex-start;
+    box-shadow: 30px 16px 40px 30px rgba(17, 17, 17, 0.2); 
+}
+.box2 .pro img{
+    height:280px;
+    width:240px;
+    clip-path: polygon(100% 0, 100% 19%, 63% 33%, 100% 46%, 63% 63%, 100% 84%, 100% 100%, 28% 100%, 28% 50%, 28% 0);
+}
+.boxes{
+    margin:20px 20px;
+    background:white;
+    border-radius: 20px;
+    padding: 20px 12px;
+    transition:width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+    position: relative;
+}
+.boxes img{
+    width: 64px;
+    height: 64px;
+}
+.boxes p{
+    font-family: sans-serif;
+    padding:2px 10px;
+    line-height: 30px;
+    height: 5px;
+    overflow: hidden;
+}
+.boxes:hover p:hover{
+    height: 150px;
+    background:white;
+}
+/*------------------------------*/
+/*---------------Projects---------------*/
+.projects , .service{
+    margin: 5% 8% 5% 8%;
+}
+.skill h2{
+    color:black;
+}
+.box{
+    float:left;
+    margin: 3% 2% 2% 2%;
+    height:300px;
+    width:450px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    position: relative;
+    border-radius: 5%;
+    
+}
+.frontbox{
+    float:left;
+    height:300px;
+    width:450px;
+    backface-visibility: hidden;
+    background:rgb(48, 48, 85);
+    position: absolute;
+    border-radius: 5%;
+    margin: 3% 3% 2% 4%;
+    box-shadow: 0px 16px 20px 10px rgba(17, 17, 17, 0.2);
+}
+.frontbox img{
+    width: 450px;
+    height: 200px;
+}
+.backbox img{
+    height: 300px;
+    width: 450px;
+}
+.frontbox p{
+    font-family: sans-serif;
+    text-align: center;
+    height: 50px;
+    overflow: hidden;
+}
+.service p{
+    font-size: x-large;
+}
+
+.backbox{
+    float:left;
+    height:300px;
+    width:450px;
+    backface-visibility: hidden;
+    background:grey;
+    position: absolute;
+    border-radius: 5%;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+
+.box:hover{
+    transform:rotateY(180deg);
+    box-shadow: 0px 16px 20px 10px rgba(17, 17, 17, 0.2);
+}
+/*-----------------------------------------------------------*/
+/*-----------------------contact--------------------*/
+.line{
+    height:1px;
+    width:100%;
+    background:black;
+    position: relative;
+    box-shadow: 0px 0px 40px 10px rgba(17, 17, 17, 0.2);
+}
+.ico img{
+    width: 50px;
+}
+.contact .ico{
+    display:inline;
+    padding:5px 10px;
+}
+.ico img:hover{
+    transition:all 0.5s;
+    width:64px;
+}
+.contact p{
+    position:static;
+}
+.contact p{
+    color:rgb(159, 161, 161);
+}
+/*--------------------------------*/
+/*----------Contact Form----------*/
+.contactform{
+    position: relative;
+    margin-top: 8%;
+    margin-left: 27%;
+    align-items: center;
+    text-align: center;
+}
+.contactform span{
+    color:black;
+    text-align: center;
+}
+.contactform .container{
+    border: 1px solid black;
+    width:450px;
+    height: 50px;
+    margin: 5px 5px;
+    display: block;
+}
+.contactform .form {
+    border:none;
+    box-shadow: 5px 20px 20px 0px rgba(17, 17, 17, 0.2);
+    width: 400px;
+    height:30px;
+}
+ #message:hover{
+    height:100px ;
+    width: inherit;
+}
+.error{
+    width: 100px;
+    height: 40px;
+    text-decoration:black;
+    color: red;
+}
+.btn{
+    width:60%;
+    height: 40px;
+    font-size: x-large;
+    text-decoration: rgba(4,9,30,0.7);
+    border: 1px solid rgb(120, 120, 218);
+    border-radius:20px;
+    background:rgb(120, 120, 218);
+    margin:5% 20% 5% 20%;
+    align-items: center;
+    position:relative;
+}
+.btn:hover{
+    background:rgb(80, 80, 218);
+}
+/*------------------------------------------*/
+@media screen and (max-width: 600px){
+    h2{
+        color:white;
+    }
+    .navbar{
+        margin:0px 0px 0px 0px;
+        position:fixed;
+        background:black;
+        height:100%;
+        width:100%;
+    }
+    .dropdown:hover img{
+        height: 64px;
+    }
+    .dropdown:hover .drops{
+        color:rgb(140, 140, 240);
+        display:block;
+    }
+    .item{
+        display: none;
+    }
+    .cover-pic {
+        display:none;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .headline{
+        color:white;
+    }
+    .profile-pic .me img{
+        border:2px solid white;
+    }
+}
